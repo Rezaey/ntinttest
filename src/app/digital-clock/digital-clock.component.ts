@@ -24,7 +24,6 @@ export class DigitalClockComponent implements OnInit {
   constructor(private renderer: Renderer2, private clkService: ClockSevice) {}
 
   ngOnInit() {
-    this.day = this.clkService.getTime();
     this.setTime();
   }
 
