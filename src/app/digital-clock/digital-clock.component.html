@@ -1,0 +1,17 @@
+<div class="clock-container">
+  <div class="clock">
+    <span class="clock-colon"
+      ><span class="clock-digits">{{
+        hour.length === 2 ? hour : "0".concat(hour)
+      }}</span
+      ><span #colon>:</span
+      ><span class="clock-digits">{{
+        min.length === 2 ? min : "0".concat(min)
+      }}</span></span
+    >
+    <div class="hr" id="hr" #hr></div>
+
+    <div class="min"><div class="mn" id="mn" #mn></div></div>
+    <div class="sec"><div class="sc" id="sc" #sc></div></div>
+  </div>
+</div>
